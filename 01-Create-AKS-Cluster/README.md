@@ -148,6 +148,12 @@ kubectl apply -f kube-manifests/
 # Verify Pods
 kubectl get pods
 
+# Get logs of pod
+kubectl logs -f <pod-name>
+
+# Get details & Events occured on pod
+kubectl describe pod <pod-name>
+
 # Verify Deployment
 kubectl get deployment
 
